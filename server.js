@@ -17,7 +17,6 @@ dbConnect()
 
 
 
-let notes = []
 
 app.get("/notes",async(req,res)=>{
     const notes = await Users.find({})
