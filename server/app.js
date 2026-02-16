@@ -1,7 +1,8 @@
-const { config } = require('dotenv');
+require('dotenv').config()
+console.log("Loaded URL:", process.env.URL)
+
 const express = require('express')
 const app = express();
-config('dotenv')
 const cors = require('cors')
 const mongoose = require("mongoose")
 const Users = require("../Model/notes")
@@ -26,7 +27,9 @@ dbConnect()
 
 
 
-
+app.get("/", (req, res) => {
+  res.json({ message: "API is running" })
+})
 
 
 app.get("/notes",async(req,res)=>{
