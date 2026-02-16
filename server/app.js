@@ -4,7 +4,7 @@ const app = express();
 config('dotenv')
 const cors = require('cors')
 const mongoose = require("mongoose")
-const Users = require("./Model/notes")
+const Users = require("../Model/notes")
 
 
 app.use(express.json());
