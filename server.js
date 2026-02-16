@@ -81,6 +81,6 @@ app.delete('/notes/:id',async(req,res)=>{
     })
 })
 
-app.listen(8000,()=>{
-    console.log("server is running")
-})
+// app.listen(8000,()=>{
+//     console.log("server is running")
+// })
