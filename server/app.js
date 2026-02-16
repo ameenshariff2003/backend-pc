@@ -10,7 +10,7 @@ const Users = require("../Model/notes")
 
 app.use(express.json());
 app.use(cors({
-  origin: ["http://localhost:5173"],
+  origin: ["https://verdant-malabi-715330.netlify.app/"],
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
   credentials: true
 }))
