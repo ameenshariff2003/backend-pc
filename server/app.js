@@ -9,8 +9,9 @@ const Users = require("../Model/notes")
 
 
 app.use(express.json());
-app.use(cors())
-
+app.use(cors({
+  origin: "*"
+}))
 
 
 
